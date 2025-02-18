@@ -11,6 +11,7 @@ class Archive extends StatelessWidget {
           children: [
             Icon(Icons.archive_outlined,
                 size: 33, color: Color.fromRGBO(91, 100, 106, 1.0)),
+                SizedBox(width:5),
             Text('Archived',
                 style: TextStyle(
                   color: Colors.black,
