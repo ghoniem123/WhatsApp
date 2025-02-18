@@ -1,16 +1,64 @@
-# whatsapp_task
+# WhatsApp Task  
 
-A new Flutter project.
+A Flutter project replicating WhatsApp, designed as a task to implement two primary screens: **Home** and **Chat**.
 
-## Getting Started
+## Features  
 
-This project is a starting point for a Flutter application.
+- **Home Screen**: Displays a list of chat contacts.  
+- **Chat Screen**: Allows users to view and send messages.  
+- **Flutter-powered UI** for smooth animations and responsiveness.  
 
-A few resources to get you started if this is your first Flutter project:
+## Getting Started  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Follow these steps to set up and run the project on your local machine:  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Prerequisites  
+
+- Ensure you have Flutter installed. You can download it [here](https://flutter.dev/docs/get-started/install).  
+- Install dependencies:  
+
+  ```sh
+  flutter pub get
+  ```
+
+### Running the App  
+
+To run the project, use the following command:  
+
+```sh
+flutter run
+```
+
+## Project Structure  
+
+```
+/lib
+│── main.dart             # Entry point of the application
+│── screens/
+│   ├── home_screen.dart  # Home screen UI and logic
+│   ├── chat_screen.dart  # Chat screen UI and logic
+│── widgets/              # Reusable UI components
+│── models/               # Data models
+```
+
+## Dependencies  
+
+This project uses the following Flutter packages:  
+
+- `flutter` – Core framework  
+- `flutter_bloc` – (If used) State management  
+- `provider` – (If used) Dependency injection  
+- `http` – API calls (if applicable)  
+
+## Contribution  
+
+Feel free to fork this repository, open issues, or submit pull requests to enhance the project.  
+
+## License  
+
+This project is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for more details.  
+
+---
+
+Happy coding! 🚀  
+
