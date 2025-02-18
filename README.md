@@ -5,7 +5,7 @@ A Flutter project replicating WhatsApp, designed as a task to implement two prim
 ## Features  
 
 - **Home Screen**: Displays a list of chat contacts.  
-- **Chat Screen**: Allows users to view messages.
+- **Chat Screen**: Allows users to view messages.  
 - **Flutter-powered UI** for smooth animations and responsiveness.  
 
 ## Getting Started  
@@ -29,7 +29,7 @@ To run the project, use the following command:
 flutter run
 ```
 
-<!-- ## Project Structure  
+## Project Structure  
 
 ```
 /lib
@@ -38,17 +38,14 @@ flutter run
 │   ├── home_screen.dart  # Home screen UI and logic
 │   ├── chat_screen.dart  # Chat screen UI and logic
 │── widgets/              # Reusable UI components
-│── models/               # Data models
-``` -->
+```
 
 ## Dependencies  
 
 This project uses the following Flutter packages:  
 
 - `flutter` – Core framework  
-<!-- - `flutter_bloc` – (If used) State management  
-- `provider` – (If used) Dependency injection  
-- `http` – API calls (if applicable)   -->
+
 
 ## Contribution  
 

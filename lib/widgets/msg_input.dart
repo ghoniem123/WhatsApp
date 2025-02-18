@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ChatTextInput extends HookWidget {
-  const ChatTextInput({super.key});
+class MsgInput extends HookWidget {
+  const MsgInput({super.key});
   @override
   Widget build(BuildContext context) {
     final textController = useTextEditingController();

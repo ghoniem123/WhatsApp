@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class ChatTile extends StatefulWidget {
+class ContactTile extends StatefulWidget {
   final Map<String, dynamic> chat;
-  const ChatTile({super.key, required this.chat});
+  const ContactTile({super.key, required this.chat});
 
   @override
-  State<ChatTile> createState() => _ChatTileState();
+  State<ContactTile> createState() => _ContactTileState();
 }
 
-class _ChatTileState extends State<ChatTile> {
+class _ContactTileState extends State<ContactTile> {
 
 
   @override

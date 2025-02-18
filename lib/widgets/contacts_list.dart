@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:whatsapp_task/chat_tile.dart';
+import 'package:whatsapp_task/widgets/contact_tile.dart';
 
-class ChatList extends StatefulWidget {
-  const ChatList({super.key});
+class ContactsList extends StatefulWidget {
+  const ContactsList({super.key});
 
   @override
-  State<ChatList> createState() => _ChatListState();
+  State<ContactsList> createState() => _ContactsListState();
 }
 
-class _ChatListState extends State<ChatList> {
+class _ContactsListState extends State<ContactsList> {
   List<Map<String, dynamic>> chatList = [
     {
       "icon": "assets/ironman.jpg",
@@ -151,7 +151,7 @@ class _ChatListState extends State<ChatList> {
           onTap: () {
             Navigator.pushNamed(context, '/chat', arguments: chat);
           },
-          child: ChatTile(chat: chat));
+          child: ContactTile(chat: chat));
     }, childCount: chatList.length)));
   }
 }
