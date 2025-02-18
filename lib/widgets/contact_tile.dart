@@ -10,8 +10,6 @@ class ContactTile extends StatefulWidget {
 }
 
 class _ContactTileState extends State<ContactTile> {
-
-
   @override
   Widget build(BuildContext context) {
     DateTime time = DateFormat.Hm().parse(widget.chat['time']!);
@@ -45,12 +43,16 @@ class _ContactTileState extends State<ContactTile> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(widget.chat['name'],
+                       SizedBox(
+                          width: textWidth,
+                     child: Text(widget.chat['name'],
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.black,
                             fontSize: 30,
-                          )),
+                          ))),
                       SizedBox(
                           width: textWidth,
                           child: Text(widget.chat['response']!,
@@ -62,19 +64,22 @@ class _ContactTileState extends State<ContactTile> {
                     ],
                   ),
                 ]),
-                
-                   Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(time_12Hr,
-                            style: TextStyle(
-                              fontSize: 21,
-                            )),
-                        SizedBox(height: 15,),
-                        (widget.chat['pin']??false)?Icon(Icons.push_pin_rounded, size: 32): SizedBox(height:32)
-                      ],
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text(time_12Hr,
+                        style: TextStyle(
+                          fontSize: 17,
+                        )),
+                    SizedBox(
+                      height: 15,
                     ),
+                    (widget.chat['pin'] ?? false)
+                        ? Icon(Icons.push_pin_rounded, size: 28)
+                        : SizedBox(height: 32)
+                  ],
+                ),
               ]);
         })));
   }
